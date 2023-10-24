@@ -1,5 +1,6 @@
-import State from "./components/state"
-import Form from "./components/form"
+import React from "react";
+import State from "./components/state";
+import Form from "./components/form";
 
 import {
   createBrowserRouter,
@@ -9,7 +10,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-
   const router = createBrowserRouter([
     {
       path: "/",
@@ -17,7 +17,7 @@ function App() {
         <div>
           <State />
         </div>
-      )
+      ),
     },
     {
       path: "/form/:state",
@@ -25,9 +25,9 @@ function App() {
         <div>
           <Form />
         </div>
-      )
-    }
-  ])
+      ),
+    },
+  ]);
   return (
     <div className="App">
       <RouterProvider router={router} />
