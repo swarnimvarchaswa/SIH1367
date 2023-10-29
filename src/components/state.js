@@ -33,7 +33,7 @@ export default function StateNameFunct() {
         <p className="text-center text-white">@ Team Garuda 2.0</p>
       </div>
 
-      <div className="flex justify-center mt-[6rem] mx-10">
+      <div className="flex justify-center mt-[5rem] mx-10">
         <div className="max-w-md w-full border-solid border-[0px] border-red-700 rounded-xl bg-white shadow-lg">
           <p className="bg-orange-500 text-white text-3xl text-center px-8 py-3 rounded-t-lg">
             University Login

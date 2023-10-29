@@ -2,24 +2,19 @@ import React from "react";
 
 export default function Form() {
   return (
-    <div className="flex flex-row">
-      <div className="bg-orange-50 basis-3/5 h-screen mx-2  border-solid rounded-lg border-2 border-orange-300">
-<div className="mx-12 my-12 grid justify-items-center">
-            <p className="text-3xl text-center">Scholarship Form</p>
-
-            <input
-              className="w-1/2 py-2 rounded-lg mt-10 px-3 border-solid border-2 border-gray-200 focus:outline-green-500"
-              placeholder="Name"
-            />
-            <input
-              className="w-1/2 py-2 rounded-lg mt-6 px-3 border-solid border-2 border-gray-200 focus:outline-green-500"
-              placeholder="Roll Number"
-            />
-          </div>
-</div>
-      <div className="bg-white basis-2/5 flex flex-col">
-        <div className="bg-green-50 basis-3/5 mx-2  border-solid rounded-lg border-2 border-green-300">hiiiii</div>
-        <div className="bg-blue-50 basis-2/5 mx-2  border-solid rounded-lg border-2 border-blue-300">hiiiii</div>
+    <div className="h-screen w-screen bg-slate-200">
+      {/* header */}
+      <div className="grid items-center justify-center w-screen bg-red-800 pt-3 pb-3 gap-1 ">
+        <p className=" text-white text-center text-3xl">
+          Other State Scholarship Portal
+        </p>
+        <p className="text-gray-200 text-sm text-center">
+          For Students Studing in other State University
+        </p>
+        {/* footer */}
+      </div>
+      <div className="w-screen bg-blue-800 fixed bottom-0 py-4">
+        <p className="text-center text-white">@ Team Garuda 2.0</p>
       </div>
     </div>
   );
