@@ -40,7 +40,7 @@ export default function Form() {
             student details to verify it.
           </p>
 
-          <div className="px-8 mt-16 max-w-md mx-auto">
+          <div className="px-8 mt-8 max-w-md mx-auto">
             <select
               className="w-full px-3 py-2 text-lg text-gray-600 rounded-md border-2 border-gray-300 focus:outline-orange-500"
               id="color"

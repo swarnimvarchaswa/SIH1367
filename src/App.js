@@ -1,6 +1,7 @@
 import React from "react";
 import State from "./components/state";
 import Form from "./components/form";
+import Personal from "./components/personal";
 
 import {
   createBrowserRouter,
@@ -27,6 +28,14 @@ function App() {
         </div>
       ),
     },
+    {
+      path: "/personal",
+      element: (
+        <div>
+          <Personal />
+        </div>
+      )
+    }
   ]);
   return (
     <div className="App">
