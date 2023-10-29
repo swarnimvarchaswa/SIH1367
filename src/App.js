@@ -20,7 +20,7 @@ function App() {
       ),
     },
     {
-      path: "/form/:state",
+      path: "/details",
       element: (
         <div>
           <Form />
