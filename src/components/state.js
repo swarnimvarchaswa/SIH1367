@@ -13,7 +13,7 @@ export default function StateNameFunct() {
       collegeName === "MMMUT" &&
       password === "MMMUT"
     ) {
-      navigate(`/detailss`);
+      navigate(`/details`);
     }
   };
 
