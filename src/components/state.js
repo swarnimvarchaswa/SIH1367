@@ -4,28 +4,37 @@ import { useNavigate, Link } from "react-router-dom";
 export default function StateNameFunct() {
   const [stateName, setStateName] = useState("");
   const [collegeName, setCollegeName] = useState("");
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleClick = () => {
-    if (stateName === "6522f4ae4064ebe565244450" && collegeName === "MMMUT" && password === "MMMUT") {
+    if (
+      stateName === "6522f4ae4064ebe565244450" &&
+      collegeName === "MMMUT" &&
+      password === "MMMUT"
+    ) {
       navigate(`/form/${stateName}`);
     }
   };
 
   return (
     <div className="h-screen w-screen bg-slate-200">
-      <div className="grid items-center justify-center w-screen bg-red-800 pt-2 pb-2 gap-1 ">
+      {/* header */}
+      <div className="grid items-center justify-center w-screen bg-red-800 pt-3 pb-3 gap-1 ">
         <p className=" text-white text-center text-3xl">
           Other State Scholarship Portal
         </p>
         <p className="text-gray-200 text-sm text-center">
           For Students Studing in other State University
         </p>
+        {/* footer */}
+      </div>
+      <div className="w-screen bg-blue-800 fixed bottom-0 py-4">
+        <p className="text-center text-white">@ Team Garuda 2.0</p>
       </div>
 
-      <div className="flex justify-center mt-16 mx-10">
-        <div className="max-w-md w-full border-solid border-[2px] border-red-700 rounded-xl bg-white shadow-lg">
+      <div className="flex justify-center mt-[6rem] mx-10">
+        <div className="max-w-md w-full border-solid border-[0px] border-red-700 rounded-xl bg-white shadow-lg">
           <p className="bg-orange-500 text-white text-3xl text-center px-8 py-3 rounded-t-lg">
             University Login
           </p>
@@ -83,7 +92,7 @@ export default function StateNameFunct() {
           </div>
           <div className="px-8 pt-6 pb-8 w-full">
             <button
-              className="bg-orange-500 py-2 w-full  rounded-lg border-solid border-2 border-orange-600  text-white text-xl hover:bg-orange-600"
+              className="bg-orange-500 py-2 w-full rounded-lg text-white text-xl hover:bg-orange-600"
               onClick={() => {
                 handleClick();
               }}
