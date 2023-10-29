@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
+  const navigate = useNavigate();
+  const [state, setState] = useState("");
+  const [number, setNumber] = useState("");
+
+
+  const handleClick = () => {
+    if (
+      state === "6522f4ae4064ebe565244450" &&
+      number === "12345678900"
+    ) {
+      navigate(`/personal`);
+    }
+  };
+
   return (
     <div className="h-screen w-screen bg-slate-200">
       {/* header */}
@@ -32,7 +47,7 @@ export default function Form() {
               name="color"
               placeholder="select"
               onChange={(e) => {
-                // setStateName(e.target.value);
+                setState(e.target.value);
               }}
             >
               <option value="" hidden>
@@ -54,7 +69,7 @@ export default function Form() {
               name="bookName"
               placeholder="Student Registration Number"
               onChange={(e) => {
-                // setCollegeName(e.target.value);
+                setNumber(e.target.value);
               }}
             />
             <p className="pl-3 text-sm pt-1 text-gray-400">
@@ -65,7 +80,7 @@ export default function Form() {
             <button
               className="bg-orange-500 py-2 w-full rounded-lg text-white text-xl hover:bg-orange-600"
               onClick={() => {
-                // handleClick();
+                handleClick();
               }}
             >
               Get Details
