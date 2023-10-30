@@ -7,7 +7,10 @@ export default function Form() {
   const [number, setNumber] = useState("");
 
   const handleClick = () => {
-    if (state === "6522f4ae4064ebe565244450" && number === "12345678900") {
+    if (
+      (state === "6522f4ae4064ebe565244450" && number === "12345678900") ||
+      (state === "65244c6ecdc93d9417c140e4" && number === "98765432100")
+    ) {
       navigate(`/personal`);
     }
   };
@@ -25,7 +28,7 @@ export default function Form() {
         {/* footer */}
       </div>
       <div className="w-screen bg-blue-800 fixed bottom-0 py-4">
-        <p className="text-center text-white">@ Team Garuda 2.0</p>
+        <p className="text-center text-white">© Copyright Team Garuda 2.0</p>
       </div>
 
       {/* body */}
@@ -35,7 +38,9 @@ export default function Form() {
             Welcome to Other State Scholarship Portal. You can Enter your
             student details to verify it.
           </p>
-          <p className="text-5xl text-center text-orange-500 pt-16">Student Details</p>
+          <p className="text-5xl text-center text-orange-500 pt-16">
+            Student Details
+          </p>
           <div className="px-8 mt-8 max-w-md mx-auto">
             <select
               className="w-full px-3 py-2 text-lg text-gray-600 rounded-md border-2 border-gray-300 focus:outline-orange-500"
@@ -56,6 +61,10 @@ export default function Form() {
             <p className="pl-3 text-sm pt-1 text-gray-400">
               State - <span className="text-green-500">New Delhi</span>
             </p>
+            {/* <p className="pl-3 text-sm pt-1 text-gray-400">
+              Student 2 State -{" "}
+              <span className="text-green-500">Madhya Pradesh</span>
+            </p> */}
           </div>
           <div className="px-8 max-w-md pt-6 mx-auto">
             <input
@@ -72,6 +81,10 @@ export default function Form() {
               Registration Number -{" "}
               <span className="text-green-500">12345678900</span>
             </p>
+            {/* <p className="pl-3 text-sm pt-1 text-gray-400">
+              Student 2 Registration Number -{" "}
+              <span className="text-green-500">98765432100</span>
+            </p> */}
           </div>
           <div className="px-8 pt-8 pb-8 max-w-md mx-auto">
             <button

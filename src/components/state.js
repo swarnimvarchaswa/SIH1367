@@ -30,7 +30,7 @@ export default function StateNameFunct() {
         {/* footer */}
       </div>
       <div className="w-screen bg-blue-800 fixed bottom-0 py-4">
-        <p className="text-center text-white">@ Team Garuda 2.0</p>
+        <p className="text-center text-white">© Copyright Team Garuda 2.0</p>
       </div>
 
       <div className="flex justify-center mt-[5rem] mx-10">
