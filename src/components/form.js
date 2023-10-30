@@ -6,12 +6,8 @@ export default function Form() {
   const [state, setState] = useState("");
   const [number, setNumber] = useState("");
 
-
   const handleClick = () => {
-    if (
-      state === "6522f4ae4064ebe565244450" &&
-      number === "12345678900"
-    ) {
+    if (state === "6522f4ae4064ebe565244450" && number === "12345678900") {
       navigate(`/personal`);
     }
   };
@@ -39,7 +35,7 @@ export default function Form() {
             Welcome to Other State Scholarship Portal. You can Enter your
             student details to verify it.
           </p>
-
+          <p className="text-5xl text-center text-orange-500 pt-16">Student Details</p>
           <div className="px-8 mt-8 max-w-md mx-auto">
             <select
               className="w-full px-3 py-2 text-lg text-gray-600 rounded-md border-2 border-gray-300 focus:outline-orange-500"
@@ -51,7 +47,7 @@ export default function Form() {
               }}
             >
               <option value="" hidden>
-              Student Residence State
+                Student Residence State
               </option>
               <option value="6522f4ae4064ebe565244450">New Delhi</option>
               <option value="65244c6ecdc93d9417c140e4">Madhya Pradesh</option>
@@ -73,7 +69,8 @@ export default function Form() {
               }}
             />
             <p className="pl-3 text-sm pt-1 text-gray-400">
-            Registration Number - <span className="text-green-500">12345678900</span>
+              Registration Number -{" "}
+              <span className="text-green-500">12345678900</span>
             </p>
           </div>
           <div className="px-8 pt-8 pb-8 max-w-md mx-auto">
